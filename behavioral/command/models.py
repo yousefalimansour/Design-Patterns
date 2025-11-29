@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Register models from payments package
+from command.payments.models import Payment, Subscription
+
+__all__ = ['Payment', 'Subscription']
